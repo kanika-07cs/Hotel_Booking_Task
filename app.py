@@ -2,13 +2,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle as pkl
-
+import joblib
 scaler = pkl.load(open("scaler.pkl", "rb"))
 pt = pkl.load(open("power_transformer.pkl", "rb"))
 label_encoders = pkl.load(open("label_encoders.pkl", "rb"))  
 feature_order = pkl.load(open("data_columns.pkl", "rb"))
 
-rf_model = pkl.load(open("model_rf.pkl", "rb"))
+loaded_rf = joblib.load("model_rf.pkl")
+
 xgb_model = pkl.load(open("model_xgb.pkl", "rb"))
 
 num_cols = ['average price', 'total_guest', 'total_nights']
@@ -61,7 +62,7 @@ input_df = input_df[feature_order]
 input_scaled = scaler.transform(input_df)
 
 model_choice = st.selectbox("Choose Model", ["Random Forest", "XGBoost"])
-model = rf_model if model_choice=="Random Forest" else xgb_model
+model = loaded_rf if model_choice=="Random Forest" else xgb_model
 
 threshold = 0.4  
 if st.button("Predict"):
