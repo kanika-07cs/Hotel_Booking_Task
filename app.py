@@ -8,7 +8,7 @@ pt = pkl.load(open("power_transformer.pkl", "rb"))
 label_encoders = pkl.load(open("label_encoders.pkl", "rb"))  
 feature_order = pkl.load(open("data_columns.pkl", "rb"))
 
-loaded_rf = joblib.load("model_rf.pkl")
+rf_model = pkl.load(open("model_rf.pkl", "rb"))
 
 xgb_model = pkl.load(open("model_xgb.pkl", "rb"))
 
@@ -62,7 +62,7 @@ input_df = input_df[feature_order]
 input_scaled = scaler.transform(input_df)
 
 model_choice = st.selectbox("Choose Model", ["Random Forest", "XGBoost"])
-model = loaded_rf if model_choice=="Random Forest" else xgb_model
+model = rf_model if model_choice=="Random Forest" else xgb_model
 
 threshold = 0.4  
 if st.button("Predict"):
