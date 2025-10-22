@@ -7,6 +7,9 @@ By applying data preprocessing, feature engineering, and advanced machine learni
 - Optimize revenue management.
 - Improve customer retention strategies.
 
+** Dataset Link**: https://www.kaggle.com/datasets/youssefaboelwafa/hotel-booking-cancellation-prediction
+
+
 ## Dataset Description
 | Column | Description |
 |---------|-------------|
