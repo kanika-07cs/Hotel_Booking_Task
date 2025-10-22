@@ -95,6 +95,7 @@ For each model, the following metrics were computed:
 ## Visualisation
 - Total Guests per Month by Room Type
 <img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/a48ab149-aa74-4172-a957-dad096a38dbd" />
+
 - Cancellation Rate by Month
 <img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/2c5b36e4-eaff-45ab-adbc-1842b1bef672" />
 
