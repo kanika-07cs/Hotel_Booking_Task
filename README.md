@@ -82,7 +82,7 @@ For each model, the following metrics were computed:
 - Recall
 - F1-score
 - ROC-AUC
-  <img width="450" height="455" alt="image" src="https://github.com/user-attachments/assets/4cda5d8b-5989-4ee8-97a5-75a8a2948fc5" />
+<img width="450" height="455" alt="image" src="https://github.com/user-attachments/assets/4cda5d8b-5989-4ee8-97a5-75a8a2948fc5" />
 - Confusion Matrix
 
 ## How to Run
@@ -94,9 +94,9 @@ For each model, the following metrics were computed:
 
 ## Visualisation
 - Total Guests per Month by Room Type
-  <img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/a48ab149-aa74-4172-a957-dad096a38dbd" />
+<img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/a48ab149-aa74-4172-a957-dad096a38dbd" />
 - Cancellation Rate by Month
-  <img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/2c5b36e4-eaff-45ab-adbc-1842b1bef672" />
+<img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/2c5b36e4-eaff-45ab-adbc-1842b1bef672" />
 
 ## Conclusion
 - Data preprocessing, transformation, and SMOTE balancing significantly improved model performance.
